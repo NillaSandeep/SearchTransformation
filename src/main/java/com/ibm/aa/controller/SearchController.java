@@ -1,5 +1,14 @@
 package com.ibm.aa.controller;
 
-public class SearchController {
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
+public class SearchController {
+	
+	@RequestMapping("/")
+	public String canaryMethod() {
+		return "This is a test";
+	}
+	
 }
