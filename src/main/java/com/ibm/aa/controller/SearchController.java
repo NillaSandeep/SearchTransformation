@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ibm.aa.repository.LinksRepository;
+//import com.ibm.aa.repository.LinksRepository;
 
 @RestController
 public class SearchController {
-	@Autowired
-	LinksRepository linksRepository;
+//	@Autowired
+//	LinksRepository linksRepository;
 	
 	@CrossOrigin(origins = "http://localhost:4200")
 	@RequestMapping(value="/", method=RequestMethod.GET)
@@ -25,11 +25,11 @@ public class SearchController {
 		return "JSONDATA";
 	}
 	
-	@CrossOrigin(origins = "http://localhost:4200")
-	@RequestMapping(value="/setData", method=RequestMethod.POST)
-	public String postData(String jsonData) {
-		linksRepository.saveAndFlush(jsonData);
-		return "Success";
-	}
+//	@CrossOrigin(origins = "http://localhost:4200")
+//	@RequestMapping(value="/setData", method=RequestMethod.POST)
+//	public String postData(String jsonData) {
+//		linksRepository.saveAndFlush(jsonData);
+//		return "Success";
+//	}
 	
 }

@@ -1,0 +1,10 @@
+applications:
+- path: target/SearchTransformation-0.0.1-SNAPSHOT.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: SearchOnePlace
+  host: SearchOnePlace
+  disk_quota: 1024M
+  services:
+  - SearchOnePlace-cloudantNoSQLDB
